@@ -10,7 +10,7 @@ class DateUtil {
         return dateFormatter
     }
 
-    class func createDate(fromDateString dateString: String?, dateFormat: DateFormat, timeZone: TimeZone) -> Date? {
+    class func createDate(from dateString: String?, dateFormat: DateFormat, timeZone: TimeZone) -> Date? {
         if !StringUtil.isNilOrEmpty(dateString) {
             return dateFormatter(with: dateFormat, timeZone: timeZone).date(from: dateString!)
         }

@@ -5,6 +5,12 @@ protocol BaseResource: class {
 
     init(data: Data)
 
-    func map(from json: JSON)
+}
+
+extension BaseResource {
+
+    init(data: Data) {
+        fatalError("override required")
+    }
 
 }

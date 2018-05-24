@@ -45,7 +45,6 @@ class ArticlesRequestSpec: QuickSpec {
 
                     it("returns success") {
                         expect(apiResponse.isSuccess()).to(beTrue())
-
                     }
 
                     it("returns resource type") {

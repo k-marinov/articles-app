@@ -51,6 +51,15 @@
 		B63BFEDA20B744F8005AC633 /* RemoteCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFED920B744F8005AC633 /* RemoteCreatable.swift */; };
 		B63BFEE020B7481C005AC633 /* ArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEDF20B7481C005AC633 /* ArticlesRequest.swift */; };
 		B63BFEE320B74D9E005AC633 /* HttpResponseMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE220B74D9E005AC633 /* HttpResponseMother.swift */; };
+		B63BFEE620B75364005AC633 /* ArticlesResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE520B75364005AC633 /* ArticlesResourceSpec.swift */; };
+		B63BFEE820B7536B005AC633 /* ArticleResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE720B7536B005AC633 /* ArticleResourceSpec.swift */; };
+		B63BFEEA20B75379005AC633 /* AuthorResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE920B75379005AC633 /* AuthorResourceSpec.swift */; };
+		B63BFEED20B7556F005AC633 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEEC20B7556F005AC633 /* FileHelper.swift */; };
+		B63BFEF020B755BA005AC633 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = B63BFEEF20B755BA005AC633 /* articles.json */; };
+		B63BFEF220B755E0005AC633 /* article.json in Resources */ = {isa = PBXBuildFile; fileRef = B63BFEF120B755E0005AC633 /* article.json */; };
+		B63BFEF420B75614005AC633 /* ArticleMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEF320B75614005AC633 /* ArticleMother.swift */; };
+		B63BFEF620B7585A005AC633 /* ArticleResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEF520B7585A005AC633 /* ArticleResource.swift */; };
+		B63BFEF820B76141005AC633 /* AuthorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEF720B76141005AC633 /* AuthorResource.swift */; };
 		CF639828A7656464CA4CBC2B /* Pods_Telegraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DC0D7DA6CB356FACB7BA78 /* Pods_Telegraph.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +127,15 @@
 		B63BFED920B744F8005AC633 /* RemoteCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCreatable.swift; sourceTree = "<group>"; };
 		B63BFEDF20B7481C005AC633 /* ArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRequest.swift; sourceTree = "<group>"; };
 		B63BFEE220B74D9E005AC633 /* HttpResponseMother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponseMother.swift; sourceTree = "<group>"; };
+		B63BFEE520B75364005AC633 /* ArticlesResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesResourceSpec.swift; sourceTree = "<group>"; };
+		B63BFEE720B7536B005AC633 /* ArticleResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleResourceSpec.swift; sourceTree = "<group>"; };
+		B63BFEE920B75379005AC633 /* AuthorResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorResourceSpec.swift; sourceTree = "<group>"; };
+		B63BFEEC20B7556F005AC633 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		B63BFEEF20B755BA005AC633 /* articles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
+		B63BFEF120B755E0005AC633 /* article.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = article.json; sourceTree = "<group>"; };
+		B63BFEF320B75614005AC633 /* ArticleMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleMother.swift; sourceTree = "<group>"; };
+		B63BFEF520B7585A005AC633 /* ArticleResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleResource.swift; sourceTree = "<group>"; };
+		B63BFEF720B76141005AC633 /* AuthorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +194,8 @@
 		B63BFE7520B736B6005AC633 /* TelegraphTests */ = {
 			isa = PBXGroup;
 			children = (
+				B63BFEEE20B75584005AC633 /* Resources */,
+				B63BFEEB20B75562005AC633 /* Helper */,
 				B63BFEE120B74D92005AC633 /* Mothers */,
 				B63BFEDB20B74656005AC633 /* Article */,
 				B63BFE7620B736B6005AC633 /* TelegraphTests.swift */,
@@ -297,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				B63BFED520B7420A005AC633 /* ArticlesResource.swift */,
+				B63BFEF520B7585A005AC633 /* ArticleResource.swift */,
+				B63BFEF720B76141005AC633 /* AuthorResource.swift */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -358,6 +380,7 @@
 		B63BFEDB20B74656005AC633 /* Article */ = {
 			isa = PBXGroup;
 			children = (
+				B63BFEE420B75351005AC633 /* resource */,
 				B63BFEDE20B74665005AC633 /* viewmodel */,
 				B63BFEDD20B74661005AC633 /* service */,
 				B63BFEDC20B7465D005AC633 /* request */,
@@ -391,8 +414,36 @@
 			isa = PBXGroup;
 			children = (
 				B63BFEE220B74D9E005AC633 /* HttpResponseMother.swift */,
+				B63BFEF320B75614005AC633 /* ArticleMother.swift */,
 			);
 			path = Mothers;
+			sourceTree = "<group>";
+		};
+		B63BFEE420B75351005AC633 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEE520B75364005AC633 /* ArticlesResourceSpec.swift */,
+				B63BFEE720B7536B005AC633 /* ArticleResourceSpec.swift */,
+				B63BFEE920B75379005AC633 /* AuthorResourceSpec.swift */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		B63BFEEB20B75562005AC633 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEEC20B7556F005AC633 /* FileHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B63BFEEE20B75584005AC633 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEEF20B755BA005AC633 /* articles.json */,
+				B63BFEF120B755E0005AC633 /* article.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B6AD26802F549E5F1938D688 /* Pods */ = {
@@ -511,6 +562,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BFEF220B755E0005AC633 /* article.json in Resources */,
+				B63BFEF020B755BA005AC633 /* articles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +701,7 @@
 				B63BFEBD20B73CB7005AC633 /* ComponentCreator.swift in Sources */,
 				B63BFE9E20B73C9A005AC633 /* ViewModel.swift in Sources */,
 				B63BFED220B73F83005AC633 /* ArticleRemote.swift in Sources */,
+				B63BFEF620B7585A005AC633 /* ArticleResource.swift in Sources */,
 				B63BFE9D20B73C9A005AC633 /* ServiceCreatable.swift in Sources */,
 				B63BFEA020B73C9A005AC633 /* TableViewItem.swift in Sources */,
 				B63BFE6420B736B4005AC633 /* ViewController.swift in Sources */,
@@ -667,6 +721,7 @@
 				B63BFED420B73FD8005AC633 /* ArticlesRequest.swift in Sources */,
 				B63BFE9F20B73C9A005AC633 /* TableViewCell.swift in Sources */,
 				B63BFED620B7420A005AC633 /* ArticlesResource.swift in Sources */,
+				B63BFEF820B76141005AC633 /* AuthorResource.swift in Sources */,
 				B63BFED820B74436005AC633 /* UtilityCreatable.swift in Sources */,
 				B63BFE6220B736B4005AC633 /* AppDelegate.swift in Sources */,
 				B63BFEAC20B73CA8005AC633 /* HttpResponse.swift in Sources */,
@@ -678,9 +733,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BFEE820B7536B005AC633 /* ArticleResourceSpec.swift in Sources */,
+				B63BFEF420B75614005AC633 /* ArticleMother.swift in Sources */,
+				B63BFEEA20B75379005AC633 /* AuthorResourceSpec.swift in Sources */,
 				B63BFEE020B7481C005AC633 /* ArticlesRequest.swift in Sources */,
 				B63BFE7720B736B6005AC633 /* TelegraphTests.swift in Sources */,
 				B63BFEE320B74D9E005AC633 /* HttpResponseMother.swift in Sources */,
+				B63BFEED20B7556F005AC633 /* FileHelper.swift in Sources */,
+				B63BFEE620B75364005AC633 /* ArticlesResourceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
