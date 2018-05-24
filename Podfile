@@ -17,6 +17,7 @@ def common_pods
 end
 
 def test_pods
+  pod 'OHHTTPStubs/Swift', '6.0.0'
   pod 'Quick'
   pod 'Nimble'
 end

@@ -8,9 +8,9 @@ class ArticleRemote {
         apiClient = componentCreatable.create(with: componentCreatable)
     }
 
-    func findAllArticles(with request: ArticlesRequest) -> Observable<ArticlesResource> {
+    func findAllArticles(with request: ArticlesRequest) -> Observable<[ArticleResource]> {
         return apiClient.request(with: request)
-            .map { $0.resource as! ArticlesResource }
+            .map { ($0.resource as! ArticlesResource).articles }
     }
 
 }

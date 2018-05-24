@@ -6,8 +6,6 @@ enum ApiError: Error {
 
     case server
 
-    case contentNotModified
-
     case client
 
     case unknown

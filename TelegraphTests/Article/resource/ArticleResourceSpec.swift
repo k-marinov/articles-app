@@ -53,7 +53,11 @@ class ArticleResourceSpec: QuickSpec {
                             expect(resource.releaseDate).to(equal(releaseDate))
                             expect(resource.duration).to(equal("156 mins"))
                             expect(resource.publishedDate).to(equal(publishedDate))
-                            expect(resource.author).notTo(beNil())
+
+                            expect(resource.author.name).to(equal("Robbie Collin"))
+                            expect(resource.author.imageUrl).to(equal("http://www.telegraph.co.uk/content/dam/"
+                                + "film/team/robbie-collin-byline0-USE-small.jpg"))
+                            expect(resource.author.twitter).to(equal("@robbiereviews"))
                         }
 
                     }
@@ -85,6 +89,10 @@ class ArticleResourceSpec: QuickSpec {
                             expect(resource.duration).to(beEmpty())
                             expect(resource.publishedDate).to(beNil())
                             expect(resource.author).notTo(beNil())
+
+                            expect(resource.author.name).to(beEmpty())
+                            expect(resource.author.imageUrl).to(beEmpty())
+                            expect(resource.author.twitter).to(beEmpty())
                         }
                     }
                 }

@@ -1,7 +1,7 @@
 import Foundation
 import SwiftyJSON
 
-class ArticleResource: BaseResource {
+class ArticleResource: BaseResource, TableViewItem {
 
     private(set) var id: Int!
     private(set) var websiteUrl: String!

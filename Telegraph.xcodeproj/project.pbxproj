@@ -13,7 +13,6 @@
 		B63BFE6720B736B4005AC633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6520B736B4005AC633 /* Main.storyboard */; };
 		B63BFE6920B736B5005AC633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6820B736B5005AC633 /* Assets.xcassets */; };
 		B63BFE6C20B736B6005AC633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6A20B736B6005AC633 /* LaunchScreen.storyboard */; };
-		B63BFE7720B736B6005AC633 /* TelegraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE7620B736B6005AC633 /* TelegraphTests.swift */; };
 		B63BFE8420B73B3E005AC633 /* TelegraphApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8320B73B3E005AC633 /* TelegraphApp.swift */; };
 		B63BFE8720B73B9C005AC633 /* TelegraphAppRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8620B73B9C005AC633 /* TelegraphAppRoutable.swift */; };
 		B63BFE9820B73C9A005AC633 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8D20B73C99005AC633 /* Service.swift */; };
@@ -29,7 +28,6 @@
 		B63BFEAB20B73CA8005AC633 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA320B73CA7005AC633 /* DateFormat.swift */; };
 		B63BFEAC20B73CA8005AC633 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA420B73CA7005AC633 /* HttpResponse.swift */; };
 		B63BFEAD20B73CA8005AC633 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA520B73CA7005AC633 /* HttpMethod.swift */; };
-		B63BFEAE20B73CA8005AC633 /* ObservableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA620B73CA7005AC633 /* ObservableError.swift */; };
 		B63BFEAF20B73CA8005AC633 /* ClassError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA720B73CA7005AC633 /* ClassError.swift */; };
 		B63BFEB020B73CA8005AC633 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA820B73CA7005AC633 /* ApiError.swift */; };
 		B63BFEB120B73CA8005AC633 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA920B73CA7005AC633 /* ApiResponse.swift */; };
@@ -53,13 +51,21 @@
 		B63BFEE320B74D9E005AC633 /* HttpResponseMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE220B74D9E005AC633 /* HttpResponseMother.swift */; };
 		B63BFEE620B75364005AC633 /* ArticlesResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE520B75364005AC633 /* ArticlesResourceSpec.swift */; };
 		B63BFEE820B7536B005AC633 /* ArticleResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE720B7536B005AC633 /* ArticleResourceSpec.swift */; };
-		B63BFEEA20B75379005AC633 /* AuthorResourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE920B75379005AC633 /* AuthorResourceSpec.swift */; };
 		B63BFEED20B7556F005AC633 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEEC20B7556F005AC633 /* FileHelper.swift */; };
 		B63BFEF020B755BA005AC633 /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = B63BFEEF20B755BA005AC633 /* articles.json */; };
 		B63BFEF220B755E0005AC633 /* article.json in Resources */ = {isa = PBXBuildFile; fileRef = B63BFEF120B755E0005AC633 /* article.json */; };
 		B63BFEF420B75614005AC633 /* ArticleMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEF320B75614005AC633 /* ArticleMother.swift */; };
 		B63BFEF620B7585A005AC633 /* ArticleResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEF520B7585A005AC633 /* ArticleResource.swift */; };
 		B63BFEF820B76141005AC633 /* AuthorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEF720B76141005AC633 /* AuthorResource.swift */; };
+		B63BFEFA20B76B93005AC633 /* ArticleServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEF920B76B93005AC633 /* ArticleServiceSpec.swift */; };
+		B63BFEFD20B76C77005AC633 /* ArticleHttpMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEFC20B76C77005AC633 /* ArticleHttpMocker.swift */; };
+		B63BFEFF20B76E67005AC633 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = B63BFEFE20B76E67005AC633 /* empty.json */; };
+		B63BFF0320B777A4005AC633 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0120B7776E005AC633 /* TableViewDataSource.swift */; };
+		B63BFF0520B777DB005AC633 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0420B777DB005AC633 /* ArticleCell.swift */; };
+		B63BFF0B20B77A80005AC633 /* MockArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0820B77A15005AC633 /* MockArticleService.swift */; };
+		B63BFF0C20B77ACD005AC633 /* MockComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0720B77A15005AC633 /* MockComponentCreator.swift */; };
+		B63BFF0E20B77B26005AC633 /* ArticlesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0D20B77B26005AC633 /* ArticlesViewModelSpec.swift */; };
+		B63BFF1020B77B7E005AC633 /* RxCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0F20B77B7E005AC633 /* RxCollector.swift */; };
 		CF639828A7656464CA4CBC2B /* Pods_Telegraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DC0D7DA6CB356FACB7BA78 /* Pods_Telegraph.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,7 +94,6 @@
 		B63BFE6B20B736B6005AC633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63BFE6D20B736B6005AC633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63BFE7220B736B6005AC633 /* TelegraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B63BFE7620B736B6005AC633 /* TelegraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphTests.swift; sourceTree = "<group>"; };
 		B63BFE7820B736B6005AC633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63BFE8320B73B3E005AC633 /* TelegraphApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphApp.swift; sourceTree = "<group>"; };
 		B63BFE8620B73B9C005AC633 /* TelegraphAppRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphAppRoutable.swift; sourceTree = "<group>"; };
@@ -105,7 +110,6 @@
 		B63BFEA320B73CA7005AC633 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		B63BFEA420B73CA7005AC633 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
 		B63BFEA520B73CA7005AC633 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
-		B63BFEA620B73CA7005AC633 /* ObservableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableError.swift; sourceTree = "<group>"; };
 		B63BFEA720B73CA7005AC633 /* ClassError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassError.swift; sourceTree = "<group>"; };
 		B63BFEA820B73CA7005AC633 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		B63BFEA920B73CA7005AC633 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
@@ -129,13 +133,21 @@
 		B63BFEE220B74D9E005AC633 /* HttpResponseMother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponseMother.swift; sourceTree = "<group>"; };
 		B63BFEE520B75364005AC633 /* ArticlesResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesResourceSpec.swift; sourceTree = "<group>"; };
 		B63BFEE720B7536B005AC633 /* ArticleResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleResourceSpec.swift; sourceTree = "<group>"; };
-		B63BFEE920B75379005AC633 /* AuthorResourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorResourceSpec.swift; sourceTree = "<group>"; };
 		B63BFEEC20B7556F005AC633 /* FileHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		B63BFEEF20B755BA005AC633 /* articles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
 		B63BFEF120B755E0005AC633 /* article.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = article.json; sourceTree = "<group>"; };
 		B63BFEF320B75614005AC633 /* ArticleMother.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleMother.swift; sourceTree = "<group>"; };
 		B63BFEF520B7585A005AC633 /* ArticleResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleResource.swift; sourceTree = "<group>"; };
 		B63BFEF720B76141005AC633 /* AuthorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorResource.swift; sourceTree = "<group>"; };
+		B63BFEF920B76B93005AC633 /* ArticleServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleServiceSpec.swift; sourceTree = "<group>"; };
+		B63BFEFC20B76C77005AC633 /* ArticleHttpMocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleHttpMocker.swift; sourceTree = "<group>"; };
+		B63BFEFE20B76E67005AC633 /* empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		B63BFF0120B7776E005AC633 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		B63BFF0420B777DB005AC633 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		B63BFF0720B77A15005AC633 /* MockComponentCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockComponentCreator.swift; sourceTree = "<group>"; };
+		B63BFF0820B77A15005AC633 /* MockArticleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockArticleService.swift; sourceTree = "<group>"; };
+		B63BFF0D20B77B26005AC633 /* ArticlesViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModelSpec.swift; sourceTree = "<group>"; };
+		B63BFF0F20B77B7E005AC633 /* RxCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCollector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,11 +206,12 @@
 		B63BFE7520B736B6005AC633 /* TelegraphTests */ = {
 			isa = PBXGroup;
 			children = (
-				B63BFEEE20B75584005AC633 /* Resources */,
-				B63BFEEB20B75562005AC633 /* Helper */,
-				B63BFEE120B74D92005AC633 /* Mothers */,
+				B63BFF0620B77A05005AC633 /* Mocks */,
 				B63BFEDB20B74656005AC633 /* Article */,
-				B63BFE7620B736B6005AC633 /* TelegraphTests.swift */,
+				B63BFEEB20B75562005AC633 /* Helper */,
+				B63BFEFB20B76C3D005AC633 /* HttpMock */,
+				B63BFEE120B74D92005AC633 /* Mothers */,
+				B63BFEEE20B75584005AC633 /* Resources */,
 				B63BFE7820B736B6005AC633 /* Info.plist */,
 			);
 			path = TelegraphTests;
@@ -235,6 +248,7 @@
 		B63BFE8920B73C3B005AC633 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B63BFF0020B7774F005AC633 /* datasource */,
 				B63BFE8C20B73C6F005AC633 /* protocol */,
 				B63BFE8B20B73C6A005AC633 /* model */,
 				B63BFE8A20B73C59005AC633 /* util */,
@@ -265,7 +279,6 @@
 				B63BFEA520B73CA7005AC633 /* HttpMethod.swift */,
 				B63BFEA420B73CA7005AC633 /* HttpResponse.swift */,
 				B63BFEAA20B73CA7005AC633 /* HttpStatusCode.swift */,
-				B63BFEA620B73CA7005AC633 /* ObservableError.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -296,7 +309,6 @@
 				B63BFEC020B73DB2005AC633 /* protocol */,
 				B63BFEC220B73DC1005AC633 /* request */,
 				B63BFEC120B73DBA005AC633 /* resource */,
-				B63BFEC520B73E1F005AC633 /* response */,
 				B63BFEC620B73E26005AC633 /* service */,
 				B63BFEC720B73E2C005AC633 /* view */,
 				B63BFEC420B73DE0005AC633 /* viewcontroller */,
@@ -347,13 +359,6 @@
 			path = viewcontroller;
 			sourceTree = "<group>";
 		};
-		B63BFEC520B73E1F005AC633 /* response */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = response;
-			sourceTree = "<group>";
-		};
 		B63BFEC620B73E26005AC633 /* service */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +370,7 @@
 		B63BFEC720B73E2C005AC633 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				B63BFF0420B777DB005AC633 /* ArticleCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 		B63BFEDD20B74661005AC633 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				B63BFEF920B76B93005AC633 /* ArticleServiceSpec.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -406,6 +413,7 @@
 		B63BFEDE20B74665005AC633 /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
+				B63BFF0D20B77B26005AC633 /* ArticlesViewModelSpec.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -424,7 +432,6 @@
 			children = (
 				B63BFEE520B75364005AC633 /* ArticlesResourceSpec.swift */,
 				B63BFEE720B7536B005AC633 /* ArticleResourceSpec.swift */,
-				B63BFEE920B75379005AC633 /* AuthorResourceSpec.swift */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -432,6 +439,7 @@
 		B63BFEEB20B75562005AC633 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				B63BFF0F20B77B7E005AC633 /* RxCollector.swift */,
 				B63BFEEC20B7556F005AC633 /* FileHelper.swift */,
 			);
 			path = Helper;
@@ -442,8 +450,34 @@
 			children = (
 				B63BFEEF20B755BA005AC633 /* articles.json */,
 				B63BFEF120B755E0005AC633 /* article.json */,
+				B63BFEFE20B76E67005AC633 /* empty.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B63BFEFB20B76C3D005AC633 /* HttpMock */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEFC20B76C77005AC633 /* ArticleHttpMocker.swift */,
+			);
+			path = HttpMock;
+			sourceTree = "<group>";
+		};
+		B63BFF0020B7774F005AC633 /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFF0120B7776E005AC633 /* TableViewDataSource.swift */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
+		B63BFF0620B77A05005AC633 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFF0720B77A15005AC633 /* MockComponentCreator.swift */,
+				B63BFF0820B77A15005AC633 /* MockArticleService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		B6AD26802F549E5F1938D688 /* Pods */ = {
@@ -563,6 +597,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63BFEF220B755E0005AC633 /* article.json in Resources */,
+				B63BFEFF20B76E67005AC633 /* empty.json in Resources */,
 				B63BFEF020B755BA005AC633 /* articles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +619,7 @@
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -595,6 +631,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -695,6 +732,7 @@
 				B63BFECD20B73EF2005AC633 /* ArticleService.swift in Sources */,
 				B63BFEAB20B73CA8005AC633 /* DateFormat.swift in Sources */,
 				B63BFEBC20B73CB7005AC633 /* Logger.swift in Sources */,
+				B63BFF0520B777DB005AC633 /* ArticleCell.swift in Sources */,
 				B63BFE9B20B73C9A005AC633 /* ViewControllerCreatable.swift in Sources */,
 				B63BFEAD20B73CA8005AC633 /* HttpMethod.swift in Sources */,
 				B63BFEC920B73E59005AC633 /* ArticlesViewController.swift in Sources */,
@@ -710,7 +748,6 @@
 				B63BFEB920B73CB7005AC633 /* ApiClient.swift in Sources */,
 				B63BFEB120B73CA8005AC633 /* ApiResponse.swift in Sources */,
 				B63BFE9820B73C9A005AC633 /* Service.swift in Sources */,
-				B63BFEAE20B73CA8005AC633 /* ObservableError.swift in Sources */,
 				B63BFEBA20B73CB7005AC633 /* HttpClient.swift in Sources */,
 				B63BFE9C20B73C9A005AC633 /* ApiRequest.swift in Sources */,
 				B63BFEDA20B744F8005AC633 /* RemoteCreatable.swift in Sources */,
@@ -724,6 +761,7 @@
 				B63BFEF820B76141005AC633 /* AuthorResource.swift in Sources */,
 				B63BFED820B74436005AC633 /* UtilityCreatable.swift in Sources */,
 				B63BFE6220B736B4005AC633 /* AppDelegate.swift in Sources */,
+				B63BFF0320B777A4005AC633 /* TableViewDataSource.swift in Sources */,
 				B63BFEAC20B73CA8005AC633 /* HttpResponse.swift in Sources */,
 				B63BFE9A20B73C9A005AC633 /* ModelableViewController.swift in Sources */,
 			);
@@ -733,13 +771,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BFF0B20B77A80005AC633 /* MockArticleService.swift in Sources */,
+				B63BFF0E20B77B26005AC633 /* ArticlesViewModelSpec.swift in Sources */,
 				B63BFEE820B7536B005AC633 /* ArticleResourceSpec.swift in Sources */,
 				B63BFEF420B75614005AC633 /* ArticleMother.swift in Sources */,
-				B63BFEEA20B75379005AC633 /* AuthorResourceSpec.swift in Sources */,
 				B63BFEE020B7481C005AC633 /* ArticlesRequest.swift in Sources */,
-				B63BFE7720B736B6005AC633 /* TelegraphTests.swift in Sources */,
+				B63BFF1020B77B7E005AC633 /* RxCollector.swift in Sources */,
+				B63BFEFD20B76C77005AC633 /* ArticleHttpMocker.swift in Sources */,
+				B63BFEFA20B76B93005AC633 /* ArticleServiceSpec.swift in Sources */,
 				B63BFEE320B74D9E005AC633 /* HttpResponseMother.swift in Sources */,
 				B63BFEED20B7556F005AC633 /* FileHelper.swift in Sources */,
+				B63BFF0C20B77ACD005AC633 /* MockComponentCreator.swift in Sources */,
 				B63BFEE620B75364005AC633 /* ArticlesResourceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
