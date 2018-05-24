@@ -18,12 +18,15 @@ class ArticlesRequest: ApiRequest {
         return nil
     }
 
-    func headers() -> Dictionary<HeaderName, HeaderValue> {
-        return [:]
+    func headers() -> Dictionary<HeaderName, HeaderValue>? {
+        return nil
     }
 
     func createApiResponse(httpResponse: HttpResponse) -> ApiResponse {
-        return ApiResponse(httpResponse: httpResponse, successHttpStatusCode: HttpStatusCode.created)
+        return ApiResponse(
+            resourceType: ArticlesResource.self,
+            httpResponse: httpResponse,
+            successHttpStatusCode: HttpStatusCode.ok)
     }
 
 }

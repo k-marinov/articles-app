@@ -5,7 +5,6 @@ class ApiResponse {
     private(set) var resource: BaseResource?
     private(set) var httpStatusCode: HttpStatusCode!
     private(set) var successHttpStatusCode: HttpStatusCode!
-    private(set) var headers: [AnyHashable: Any] = [AnyHashable: Any]()
 
     init<RESOURCE: BaseResource>(
         resourceType: RESOURCE.Type,
@@ -13,19 +12,8 @@ class ApiResponse {
         successHttpStatusCode: HttpStatusCode) {
         self.resource = createResource(resourceType: resourceType, data: httpResponse.data)
         self.httpStatusCode = HttpStatusCode.findOrReturnUndefined(statusCode: httpResponse.response?.statusCode)
-
         self.successHttpStatusCode = successHttpStatusCode
-        if let headers =  httpResponse.response?.allHeaderFields {
-            self.headers = headers
-        }
-    }
 
-    init(httpResponse: HttpResponse, successHttpStatusCode: HttpStatusCode) {
-        self.successHttpStatusCode = successHttpStatusCode
-        self.httpStatusCode = HttpStatusCode.findOrReturnUndefined(statusCode: httpResponse.response?.statusCode)
-        if let headers =  httpResponse.response?.allHeaderFields {
-            self.headers = headers
-        }
     }
 
     func createApiErrorOnFail(with apiRequest: ApiRequest) -> ApiError {
@@ -33,8 +21,6 @@ class ApiResponse {
             return ApiError.client
         } else if hasServerError() {
             return ApiError.server
-        } else if httpStatusCode == HttpStatusCode.notModified {
-            return ApiError.contentNotModified
         }
         return ApiError.unknown
     }

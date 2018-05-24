@@ -49,6 +49,8 @@
 		B63BFED620B7420A005AC633 /* ArticlesResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFED520B7420A005AC633 /* ArticlesResource.swift */; };
 		B63BFED820B74436005AC633 /* UtilityCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFED720B74436005AC633 /* UtilityCreatable.swift */; };
 		B63BFEDA20B744F8005AC633 /* RemoteCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFED920B744F8005AC633 /* RemoteCreatable.swift */; };
+		B63BFEE020B7481C005AC633 /* ArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEDF20B7481C005AC633 /* ArticlesRequest.swift */; };
+		B63BFEE320B74D9E005AC633 /* HttpResponseMother.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEE220B74D9E005AC633 /* HttpResponseMother.swift */; };
 		CF639828A7656464CA4CBC2B /* Pods_Telegraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DC0D7DA6CB356FACB7BA78 /* Pods_Telegraph.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +116,8 @@
 		B63BFED520B7420A005AC633 /* ArticlesResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesResource.swift; sourceTree = "<group>"; };
 		B63BFED720B74436005AC633 /* UtilityCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityCreatable.swift; sourceTree = "<group>"; };
 		B63BFED920B744F8005AC633 /* RemoteCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCreatable.swift; sourceTree = "<group>"; };
+		B63BFEDF20B7481C005AC633 /* ArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRequest.swift; sourceTree = "<group>"; };
+		B63BFEE220B74D9E005AC633 /* HttpResponseMother.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponseMother.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,8 @@
 		B63BFE7520B736B6005AC633 /* TelegraphTests */ = {
 			isa = PBXGroup;
 			children = (
+				B63BFEE120B74D92005AC633 /* Mothers */,
+				B63BFEDB20B74656005AC633 /* Article */,
 				B63BFE7620B736B6005AC633 /* TelegraphTests.swift */,
 				B63BFE7820B736B6005AC633 /* Info.plist */,
 			);
@@ -347,6 +353,46 @@
 				B63BFED120B73F83005AC633 /* ArticleRemote.swift */,
 			);
 			path = remote;
+			sourceTree = "<group>";
+		};
+		B63BFEDB20B74656005AC633 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEDE20B74665005AC633 /* viewmodel */,
+				B63BFEDD20B74661005AC633 /* service */,
+				B63BFEDC20B7465D005AC633 /* request */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		B63BFEDC20B7465D005AC633 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEDF20B7481C005AC633 /* ArticlesRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		B63BFEDD20B74661005AC633 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		B63BFEDE20B74665005AC633 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		B63BFEE120B74D92005AC633 /* Mothers */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEE220B74D9E005AC633 /* HttpResponseMother.swift */,
+			);
+			path = Mothers;
 			sourceTree = "<group>";
 		};
 		B6AD26802F549E5F1938D688 /* Pods */ = {
@@ -632,7 +678,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BFEE020B7481C005AC633 /* ArticlesRequest.swift in Sources */,
 				B63BFE7720B736B6005AC633 /* TelegraphTests.swift in Sources */,
+				B63BFEE320B74D9E005AC633 /* HttpResponseMother.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
