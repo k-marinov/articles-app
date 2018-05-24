@@ -1,0 +1,864 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D8ED9B9E740DB737E8EAF53 /* Pods_TelegraphTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7093964465DCD37D65A5D3F2 /* Pods_TelegraphTests.framework */; };
+		B63BFE6220B736B4005AC633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE6120B736B4005AC633 /* AppDelegate.swift */; };
+		B63BFE6420B736B4005AC633 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE6320B736B4005AC633 /* ViewController.swift */; };
+		B63BFE6720B736B4005AC633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6520B736B4005AC633 /* Main.storyboard */; };
+		B63BFE6920B736B5005AC633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6820B736B5005AC633 /* Assets.xcassets */; };
+		B63BFE6C20B736B6005AC633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6A20B736B6005AC633 /* LaunchScreen.storyboard */; };
+		B63BFE7720B736B6005AC633 /* TelegraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE7620B736B6005AC633 /* TelegraphTests.swift */; };
+		B63BFE8420B73B3E005AC633 /* TelegraphApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8320B73B3E005AC633 /* TelegraphApp.swift */; };
+		B63BFE8720B73B9C005AC633 /* TelegraphAppRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8620B73B9C005AC633 /* TelegraphAppRoutable.swift */; };
+		B63BFE9820B73C9A005AC633 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8D20B73C99005AC633 /* Service.swift */; };
+		B63BFE9920B73C9A005AC633 /* ComponentCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8E20B73C99005AC633 /* ComponentCreatable.swift */; };
+		B63BFE9A20B73C9A005AC633 /* ModelableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8F20B73C99005AC633 /* ModelableViewController.swift */; };
+		B63BFE9B20B73C9A005AC633 /* ViewControllerCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE9020B73C99005AC633 /* ViewControllerCreatable.swift */; };
+		B63BFE9C20B73C9A005AC633 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE9120B73C99005AC633 /* ApiRequest.swift */; };
+		B63BFE9D20B73C9A005AC633 /* ServiceCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE9220B73C99005AC633 /* ServiceCreatable.swift */; };
+		B63BFE9E20B73C9A005AC633 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE9320B73C99005AC633 /* ViewModel.swift */; };
+		B63BFE9F20B73C9A005AC633 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE9420B73C99005AC633 /* TableViewCell.swift */; };
+		B63BFEA020B73C9A005AC633 /* TableViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE9520B73C99005AC633 /* TableViewItem.swift */; };
+		B63BFEA120B73C9A005AC633 /* NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE9620B73C99005AC633 /* NibCreatable.swift */; };
+		B63BFEA220B73C9A005AC633 /* BaseResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE9720B73C9A005AC633 /* BaseResource.swift */; };
+		B63BFEAB20B73CA8005AC633 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA320B73CA7005AC633 /* DateFormat.swift */; };
+		B63BFEAC20B73CA8005AC633 /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA420B73CA7005AC633 /* HttpResponse.swift */; };
+		B63BFEAD20B73CA8005AC633 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA520B73CA7005AC633 /* HttpMethod.swift */; };
+		B63BFEAE20B73CA8005AC633 /* ObservableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA620B73CA7005AC633 /* ObservableError.swift */; };
+		B63BFEAF20B73CA8005AC633 /* ClassError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA720B73CA7005AC633 /* ClassError.swift */; };
+		B63BFEB020B73CA8005AC633 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA820B73CA7005AC633 /* ApiError.swift */; };
+		B63BFEB120B73CA8005AC633 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEA920B73CA7005AC633 /* ApiResponse.swift */; };
+		B63BFEB220B73CA8005AC633 /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEAA20B73CA7005AC633 /* HttpStatusCode.swift */; };
+		B63BFEB920B73CB7005AC633 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEB320B73CB7005AC633 /* ApiClient.swift */; };
+		B63BFEBA20B73CB7005AC633 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEB420B73CB7005AC633 /* HttpClient.swift */; };
+		B63BFEBB20B73CB7005AC633 /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEB520B73CB7005AC633 /* StringUtil.swift */; };
+		B63BFEBC20B73CB7005AC633 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEB620B73CB7005AC633 /* Logger.swift */; };
+		B63BFEBD20B73CB7005AC633 /* ComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEB720B73CB7005AC633 /* ComponentCreator.swift */; };
+		B63BFEBE20B73CB7005AC633 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEB820B73CB7005AC633 /* DateUtil.swift */; };
+		B63BFEC920B73E59005AC633 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFEC820B73E59005AC633 /* ArticlesViewController.swift */; };
+		CF639828A7656464CA4CBC2B /* Pods_Telegraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DC0D7DA6CB356FACB7BA78 /* Pods_Telegraph.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B63BFE7320B736B6005AC633 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B63BFE5620B736B4005AC633 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B63BFE5D20B736B4005AC633;
+			remoteInfo = Telegraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B89C9CE6A714CBB8BA74D76 /* Pods-Telegraph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegraph.release.xcconfig"; path = "Pods/Target Support Files/Pods-Telegraph/Pods-Telegraph.release.xcconfig"; sourceTree = "<group>"; };
+		1F4BE8B7E616C3E11F7904D5 /* Pods-TelegraphTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegraphTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelegraphTests/Pods-TelegraphTests.release.xcconfig"; sourceTree = "<group>"; };
+		4F124A843C447671EE6BDB9C /* Pods-Telegraph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Telegraph.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Telegraph/Pods-Telegraph.debug.xcconfig"; sourceTree = "<group>"; };
+		7093964465DCD37D65A5D3F2 /* Pods_TelegraphTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelegraphTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75DC0D7DA6CB356FACB7BA78 /* Pods_Telegraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Telegraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9522382A42F7C164BB93FD20 /* Pods-TelegraphTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegraphTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelegraphTests/Pods-TelegraphTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B63BFE5E20B736B4005AC633 /* Telegraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63BFE6120B736B4005AC633 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B63BFE6320B736B4005AC633 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B63BFE6620B736B4005AC633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B63BFE6820B736B5005AC633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B63BFE6B20B736B6005AC633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B63BFE6D20B736B6005AC633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63BFE7220B736B6005AC633 /* TelegraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelegraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63BFE7620B736B6005AC633 /* TelegraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphTests.swift; sourceTree = "<group>"; };
+		B63BFE7820B736B6005AC633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63BFE8320B73B3E005AC633 /* TelegraphApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphApp.swift; sourceTree = "<group>"; };
+		B63BFE8620B73B9C005AC633 /* TelegraphAppRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegraphAppRoutable.swift; sourceTree = "<group>"; };
+		B63BFE8D20B73C99005AC633 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B63BFE8E20B73C99005AC633 /* ComponentCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentCreatable.swift; sourceTree = "<group>"; };
+		B63BFE8F20B73C99005AC633 /* ModelableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelableViewController.swift; sourceTree = "<group>"; };
+		B63BFE9020B73C99005AC633 /* ViewControllerCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCreatable.swift; sourceTree = "<group>"; };
+		B63BFE9120B73C99005AC633 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		B63BFE9220B73C99005AC633 /* ServiceCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCreatable.swift; sourceTree = "<group>"; };
+		B63BFE9320B73C99005AC633 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B63BFE9420B73C99005AC633 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		B63BFE9520B73C99005AC633 /* TableViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewItem.swift; sourceTree = "<group>"; };
+		B63BFE9620B73C99005AC633 /* NibCreatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibCreatable.swift; sourceTree = "<group>"; };
+		B63BFE9720B73C9A005AC633 /* BaseResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseResource.swift; sourceTree = "<group>"; };
+		B63BFEA320B73CA7005AC633 /* DateFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		B63BFEA420B73CA7005AC633 /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpResponse.swift; sourceTree = "<group>"; };
+		B63BFEA520B73CA7005AC633 /* HttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		B63BFEA620B73CA7005AC633 /* ObservableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableError.swift; sourceTree = "<group>"; };
+		B63BFEA720B73CA7005AC633 /* ClassError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassError.swift; sourceTree = "<group>"; };
+		B63BFEA820B73CA7005AC633 /* ApiError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		B63BFEA920B73CA7005AC633 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		B63BFEAA20B73CA7005AC633 /* HttpStatusCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpStatusCode.swift; sourceTree = "<group>"; };
+		B63BFEB320B73CB7005AC633 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		B63BFEB420B73CB7005AC633 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B63BFEB520B73CB7005AC633 /* StringUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
+		B63BFEB620B73CB7005AC633 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B63BFEB720B73CB7005AC633 /* ComponentCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentCreator.swift; sourceTree = "<group>"; };
+		B63BFEB820B73CB7005AC633 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		B63BFEC820B73E59005AC633 /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B63BFE5B20B736B4005AC633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF639828A7656464CA4CBC2B /* Pods_Telegraph.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B63BFE6F20B736B6005AC633 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D8ED9B9E740DB737E8EAF53 /* Pods_TelegraphTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B63BFE5520B736B4005AC633 = {
+			isa = PBXGroup;
+			children = (
+				B63BFE6020B736B4005AC633 /* Telegraph */,
+				B63BFE8920B73C3B005AC633 /* Shared */,
+				B63BFE8820B73C13005AC633 /* SupportFiles */,
+				B63BFE7520B736B6005AC633 /* TelegraphTests */,
+				B63BFE5F20B736B4005AC633 /* Products */,
+				B6AD26802F549E5F1938D688 /* Pods */,
+				B74267DDF0C8524287EFC863 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B63BFE5F20B736B4005AC633 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFE5E20B736B4005AC633 /* Telegraph.app */,
+				B63BFE7220B736B6005AC633 /* TelegraphTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B63BFE6020B736B4005AC633 /* Telegraph */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFE8220B73B2E005AC633 /* App */,
+				B63BFEBF20B73CD9005AC633 /* Article */,
+				B63BFE6520B736B4005AC633 /* Main.storyboard */,
+				B63BFE6320B736B4005AC633 /* ViewController.swift */,
+			);
+			path = Telegraph;
+			sourceTree = "<group>";
+		};
+		B63BFE7520B736B6005AC633 /* TelegraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFE7620B736B6005AC633 /* TelegraphTests.swift */,
+				B63BFE7820B736B6005AC633 /* Info.plist */,
+			);
+			path = TelegraphTests;
+			sourceTree = "<group>";
+		};
+		B63BFE8220B73B2E005AC633 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFE6120B736B4005AC633 /* AppDelegate.swift */,
+				B63BFE8320B73B3E005AC633 /* TelegraphApp.swift */,
+				B63BFE8520B73B76005AC633 /* protocol */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B63BFE8520B73B76005AC633 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFE8620B73B9C005AC633 /* TelegraphAppRoutable.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		B63BFE8820B73C13005AC633 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFE6820B736B5005AC633 /* Assets.xcassets */,
+				B63BFE6A20B736B6005AC633 /* LaunchScreen.storyboard */,
+				B63BFE6D20B736B6005AC633 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		B63BFE8920B73C3B005AC633 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFE8C20B73C6F005AC633 /* protocol */,
+				B63BFE8B20B73C6A005AC633 /* model */,
+				B63BFE8A20B73C59005AC633 /* util */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B63BFE8A20B73C59005AC633 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEB320B73CB7005AC633 /* ApiClient.swift */,
+				B63BFEB720B73CB7005AC633 /* ComponentCreator.swift */,
+				B63BFEB820B73CB7005AC633 /* DateUtil.swift */,
+				B63BFEB420B73CB7005AC633 /* HttpClient.swift */,
+				B63BFEB620B73CB7005AC633 /* Logger.swift */,
+				B63BFEB520B73CB7005AC633 /* StringUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		B63BFE8B20B73C6A005AC633 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEA820B73CA7005AC633 /* ApiError.swift */,
+				B63BFEA920B73CA7005AC633 /* ApiResponse.swift */,
+				B63BFEA720B73CA7005AC633 /* ClassError.swift */,
+				B63BFEA320B73CA7005AC633 /* DateFormat.swift */,
+				B63BFEA520B73CA7005AC633 /* HttpMethod.swift */,
+				B63BFEA420B73CA7005AC633 /* HttpResponse.swift */,
+				B63BFEAA20B73CA7005AC633 /* HttpStatusCode.swift */,
+				B63BFEA620B73CA7005AC633 /* ObservableError.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B63BFE8C20B73C6F005AC633 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFE9120B73C99005AC633 /* ApiRequest.swift */,
+				B63BFE9720B73C9A005AC633 /* BaseResource.swift */,
+				B63BFE8E20B73C99005AC633 /* ComponentCreatable.swift */,
+				B63BFE8F20B73C99005AC633 /* ModelableViewController.swift */,
+				B63BFE9620B73C99005AC633 /* NibCreatable.swift */,
+				B63BFE8D20B73C99005AC633 /* Service.swift */,
+				B63BFE9220B73C99005AC633 /* ServiceCreatable.swift */,
+				B63BFE9420B73C99005AC633 /* TableViewCell.swift */,
+				B63BFE9520B73C99005AC633 /* TableViewItem.swift */,
+				B63BFE9020B73C99005AC633 /* ViewControllerCreatable.swift */,
+				B63BFE9320B73C99005AC633 /* ViewModel.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		B63BFEBF20B73CD9005AC633 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEC020B73DB2005AC633 /* protocol */,
+				B63BFEC220B73DC1005AC633 /* request */,
+				B63BFEC120B73DBA005AC633 /* resource */,
+				B63BFEC520B73E1F005AC633 /* response */,
+				B63BFEC620B73E26005AC633 /* service */,
+				B63BFEC720B73E2C005AC633 /* view */,
+				B63BFEC420B73DE0005AC633 /* viewcontroller */,
+				B63BFEC320B73DC6005AC633 /* viewmodel */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		B63BFEC020B73DB2005AC633 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		B63BFEC120B73DBA005AC633 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		B63BFEC220B73DC1005AC633 /* request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		B63BFEC320B73DC6005AC633 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		B63BFEC420B73DE0005AC633 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				B63BFEC820B73E59005AC633 /* ArticlesViewController.swift */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		B63BFEC520B73E1F005AC633 /* response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		B63BFEC620B73E26005AC633 /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		B63BFEC720B73E2C005AC633 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B6AD26802F549E5F1938D688 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F124A843C447671EE6BDB9C /* Pods-Telegraph.debug.xcconfig */,
+				1B89C9CE6A714CBB8BA74D76 /* Pods-Telegraph.release.xcconfig */,
+				9522382A42F7C164BB93FD20 /* Pods-TelegraphTests.debug.xcconfig */,
+				1F4BE8B7E616C3E11F7904D5 /* Pods-TelegraphTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B74267DDF0C8524287EFC863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75DC0D7DA6CB356FACB7BA78 /* Pods_Telegraph.framework */,
+				7093964465DCD37D65A5D3F2 /* Pods_TelegraphTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B63BFE5D20B736B4005AC633 /* Telegraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B63BFE7B20B736B6005AC633 /* Build configuration list for PBXNativeTarget "Telegraph" */;
+			buildPhases = (
+				A37A3194904571A04DC88693 /* [CP] Check Pods Manifest.lock */,
+				B63BFE5A20B736B4005AC633 /* Sources */,
+				B63BFE5B20B736B4005AC633 /* Frameworks */,
+				B63BFE5C20B736B4005AC633 /* Resources */,
+				7CDD1473FAA2EFE7925C9DDC /* [CP] Embed Pods Frameworks */,
+				B63BFE8120B7399C005AC633 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Telegraph;
+			productName = Telegraph;
+			productReference = B63BFE5E20B736B4005AC633 /* Telegraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B63BFE7120B736B6005AC633 /* TelegraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B63BFE7E20B736B6005AC633 /* Build configuration list for PBXNativeTarget "TelegraphTests" */;
+			buildPhases = (
+				E7F98C1CA47BE88BF4445063 /* [CP] Check Pods Manifest.lock */,
+				B63BFE6E20B736B6005AC633 /* Sources */,
+				B63BFE6F20B736B6005AC633 /* Frameworks */,
+				B63BFE7020B736B6005AC633 /* Resources */,
+				49AF6C7286184B0395889C19 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B63BFE7420B736B6005AC633 /* PBXTargetDependency */,
+			);
+			name = TelegraphTests;
+			productName = TelegraphTests;
+			productReference = B63BFE7220B736B6005AC633 /* TelegraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B63BFE5620B736B4005AC633 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = telegraph;
+				TargetAttributes = {
+					B63BFE5D20B736B4005AC633 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+					B63BFE7120B736B6005AC633 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = B63BFE5D20B736B4005AC633;
+					};
+				};
+			};
+			buildConfigurationList = B63BFE5920B736B4005AC633 /* Build configuration list for PBXProject "Telegraph" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B63BFE5520B736B4005AC633;
+			productRefGroup = B63BFE5F20B736B4005AC633 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B63BFE5D20B736B4005AC633 /* Telegraph */,
+				B63BFE7120B736B6005AC633 /* TelegraphTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B63BFE5C20B736B4005AC633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63BFE6C20B736B6005AC633 /* LaunchScreen.storyboard in Resources */,
+				B63BFE6920B736B5005AC633 /* Assets.xcassets in Resources */,
+				B63BFE6720B736B4005AC633 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B63BFE7020B736B6005AC633 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		49AF6C7286184B0395889C19 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TelegraphTests/Pods-TelegraphTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelegraphTests/Pods-TelegraphTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CDD1473FAA2EFE7925C9DDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Telegraph/Pods-Telegraph-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Telegraph/Pods-Telegraph-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A37A3194904571A04DC88693 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Telegraph-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B63BFE8120B7399C005AC633 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"$SRCROOT/.swiftlint.yml\"\necho \"swift lint run\"";
+		};
+		E7F98C1CA47BE88BF4445063 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelegraphTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B63BFE5A20B736B4005AC633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63BFEBB20B73CB7005AC633 /* StringUtil.swift in Sources */,
+				B63BFEBE20B73CB7005AC633 /* DateUtil.swift in Sources */,
+				B63BFE8720B73B9C005AC633 /* TelegraphAppRoutable.swift in Sources */,
+				B63BFE9920B73C9A005AC633 /* ComponentCreatable.swift in Sources */,
+				B63BFEAB20B73CA8005AC633 /* DateFormat.swift in Sources */,
+				B63BFEBC20B73CB7005AC633 /* Logger.swift in Sources */,
+				B63BFE9B20B73C9A005AC633 /* ViewControllerCreatable.swift in Sources */,
+				B63BFEAD20B73CA8005AC633 /* HttpMethod.swift in Sources */,
+				B63BFEA120B73C9A005AC633 /* NibCreatable.swift in Sources */,
+				B63BFEC920B73E59005AC633 /* ArticlesViewController.swift in Sources */,
+				B63BFEBD20B73CB7005AC633 /* ComponentCreator.swift in Sources */,
+				B63BFE9E20B73C9A005AC633 /* ViewModel.swift in Sources */,
+				B63BFE9D20B73C9A005AC633 /* ServiceCreatable.swift in Sources */,
+				B63BFEA020B73C9A005AC633 /* TableViewItem.swift in Sources */,
+				B63BFE6420B736B4005AC633 /* ViewController.swift in Sources */,
+				B63BFEA220B73C9A005AC633 /* BaseResource.swift in Sources */,
+				B63BFEB920B73CB7005AC633 /* ApiClient.swift in Sources */,
+				B63BFEB120B73CA8005AC633 /* ApiResponse.swift in Sources */,
+				B63BFE9820B73C9A005AC633 /* Service.swift in Sources */,
+				B63BFEAE20B73CA8005AC633 /* ObservableError.swift in Sources */,
+				B63BFEBA20B73CB7005AC633 /* HttpClient.swift in Sources */,
+				B63BFE9C20B73C9A005AC633 /* ApiRequest.swift in Sources */,
+				B63BFEB020B73CA8005AC633 /* ApiError.swift in Sources */,
+				B63BFE8420B73B3E005AC633 /* TelegraphApp.swift in Sources */,
+				B63BFEB220B73CA8005AC633 /* HttpStatusCode.swift in Sources */,
+				B63BFEAF20B73CA8005AC633 /* ClassError.swift in Sources */,
+				B63BFE9F20B73C9A005AC633 /* TableViewCell.swift in Sources */,
+				B63BFE6220B736B4005AC633 /* AppDelegate.swift in Sources */,
+				B63BFEAC20B73CA8005AC633 /* HttpResponse.swift in Sources */,
+				B63BFE9A20B73C9A005AC633 /* ModelableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B63BFE6E20B736B6005AC633 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63BFE7720B736B6005AC633 /* TelegraphTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B63BFE7420B736B6005AC633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B63BFE5D20B736B4005AC633 /* Telegraph */;
+			targetProxy = B63BFE7320B736B6005AC633 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B63BFE6520B736B4005AC633 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B63BFE6620B736B4005AC633 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B63BFE6A20B736B6005AC633 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B63BFE6B20B736B6005AC633 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B63BFE7920B736B6005AC633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B63BFE7A20B736B6005AC633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B63BFE7C20B736B6005AC633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F124A843C447671EE6BDB9C /* Pods-Telegraph.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDD95TS3QC;
+				INFOPLIST_FILE = Telegraph/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.telegraph.ios.Telegraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B63BFE7D20B736B6005AC633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B89C9CE6A714CBB8BA74D76 /* Pods-Telegraph.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDD95TS3QC;
+				INFOPLIST_FILE = Telegraph/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.telegraph.ios.Telegraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B63BFE7F20B736B6005AC633 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9522382A42F7C164BB93FD20 /* Pods-TelegraphTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDD95TS3QC;
+				INFOPLIST_FILE = TelegraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.telegraph.ios.TelegraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Telegraph.app/Telegraph";
+			};
+			name = Debug;
+		};
+		B63BFE8020B736B6005AC633 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F4BE8B7E616C3E11F7904D5 /* Pods-TelegraphTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDD95TS3QC;
+				INFOPLIST_FILE = TelegraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.telegraph.ios.TelegraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Telegraph.app/Telegraph";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B63BFE5920B736B4005AC633 /* Build configuration list for PBXProject "Telegraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63BFE7920B736B6005AC633 /* Debug */,
+				B63BFE7A20B736B6005AC633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B63BFE7B20B736B6005AC633 /* Build configuration list for PBXNativeTarget "Telegraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63BFE7C20B736B6005AC633 /* Debug */,
+				B63BFE7D20B736B6005AC633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B63BFE7E20B736B6005AC633 /* Build configuration list for PBXNativeTarget "TelegraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63BFE7F20B736B6005AC633 /* Debug */,
+				B63BFE8020B736B6005AC633 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B63BFE5620B736B4005AC633 /* Project object */;
+}
