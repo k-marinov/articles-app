@@ -3,7 +3,11 @@ import RxSwift
 
 class ApiClient {
 
-    private let httpClient: HttpClient = HttpClient()
+    private let httpClient: HttpClient
+
+    required init(componentCreatable: ComponentCreatable) {
+        httpClient = componentCreatable.create()
+    }
 
     func request(with apiRequest: ApiRequest) -> Observable<ApiResponse> {
         return httpClient.request(urlRequest: try! apiRequest.asURLRequest()).flatMap { httpResponse in

@@ -1,7 +1,7 @@
 import UIKit
 import RxSwift
 
-protocol TelegraphAppRoutable: class {
+protocol TelegraphAppRoutable: class, ArticlesRoutable {
 
     func setRootViewController(to window: UIWindow, componentCreatable: ComponentCreatable) -> UIWindow
 

@@ -54,6 +54,7 @@ extension ApiRequest {
     }
 
     private func appendHttpHeaders(toUrlRequest  urlRequest: inout URLRequest) {
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
         headers().forEach { header in
             urlRequest.addValue(header.1, forHTTPHeaderField: header.0)
         }

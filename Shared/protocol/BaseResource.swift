@@ -5,8 +5,6 @@ protocol BaseResource: class {
 
     init(data: Data)
 
-    init(json: JSON)
-
     func map(from json: JSON)
 
 }

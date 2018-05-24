@@ -1,2 +1,2 @@
-protocol ComponentCreatable: ServiceCreatable {
+protocol ComponentCreatable: ServiceCreatable, UtilityCreatable, RemoteCreatable {
 }
