@@ -18,7 +18,7 @@ class ArticlesViewModel: ViewModel, ArticlesRoutable {
         return articlesService.findAllArticles(with: ArticlesRequest())
             .observeOn(MainScheduler.instance)
             .do(onNext: { [weak self] newArticles in
-                self?.dataSource.appendOnce(contentsOf: newArticles)
+                self?.dataSource.appendOnce(contentsOf: newArticles.sorted { $0.rating > $1.rating })
             }, onError: { [weak self] error in
                 self?.onLoadArticlesCompleted(with: error as! ApiError)
             }, onCompleted: {  [weak self] in

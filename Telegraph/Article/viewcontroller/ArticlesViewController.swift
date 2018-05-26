@@ -8,7 +8,10 @@ class ArticlesViewController: UIViewController, ModelableViewController {
 
     private(set) lazy var refreshControl: UIRefreshControl = {
         let refreshControl: UIRefreshControl = UIRefreshControl()
-        refreshControl.attributedTitle = NSAttributedString(string: "Retrieving latest articles...")
+        refreshControl.attributedTitle = NSAttributedString(
+            string: "Retrieving latest articles...",
+            attributes: [.foregroundColor: UIColor.lightGray])
+        refreshControl.tintColor = UIColor.lightGray
         return refreshControl
     }()
     @IBOutlet weak var tableView: UITableView!
@@ -21,22 +24,29 @@ class ArticlesViewController: UIViewController, ModelableViewController {
         super.viewDidLoad()
         setUp()
         subscribe()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         articlesViewModel.loadArticles()
             .subscribe()
             .disposed(by: disposeBag)
     }
 
     private func setUp() {
+        setUpNavigationBarStyle()
         setUpTableView()
+    }
+
+    private func setUpNavigationBarStyle() {
+        self.navigationController?.navigationBar.barTintColor = UIColor.black
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.topItem?.title = "Articles"
     }
 
     private func setUpTableView() {
         tableView.dataSource = articlesViewModel.dataSource
         tableView.backgroundView = refreshControl
+        self.tableView.separatorStyle = .none
+        tableView.register(
+            UINib(nibName: ArticleCell.identifier, bundle: nil),
+            forCellReuseIdentifier: ArticleCell.identifier)
         //tableView.reloadData()
     }
 

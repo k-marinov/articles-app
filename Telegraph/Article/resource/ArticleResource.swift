@@ -1,7 +1,7 @@
 import Foundation
 import SwiftyJSON
 
-class ArticleResource: BaseResource, TableViewItem {
+class ArticleResource: BaseResource, ArticleCellRepresentable {
 
     private(set) var id: Int!
     private(set) var websiteUrl: String!
@@ -31,8 +31,8 @@ class ArticleResource: BaseResource, TableViewItem {
         description = json["description"].stringValue
         articleBody = json["article-body"].stringValue
         rating = json["ratings"].intValue
-        pictureUrl = json["picture-url"].stringValue
-        videoUrl = json["video-url"].stringValue
+        pictureUrl = json["picture-url"].stringValue.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        videoUrl = json["video-url"].stringValue.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         actors.append(contentsOf: json["actors"].arrayValue.compactMap { $0.stringValue } )
 
         director = json["director"].stringValue

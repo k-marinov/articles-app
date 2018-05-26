@@ -9,6 +9,14 @@ class TableViewDataSource<ITEM: TableViewItem, CELL: TableViewCell>: NSObject, U
         return items.count
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CELL = tableView.dequeueReusableCell(withIdentifier: CELL.identifier, for: indexPath) as! CELL
         if indexPath.row < items.count {

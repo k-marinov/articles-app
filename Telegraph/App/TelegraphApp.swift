@@ -9,6 +9,7 @@ class TelegraphApp: TelegraphAppRoutable {
     }
 
     func setUp(with window: UIWindow) {
+        UIApplication.shared.statusBarStyle = .lightContent
         _ = setRootViewController(to: window, componentCreatable: componentCreatable)
     }
 

@@ -13,7 +13,7 @@ class AuthorResource: BaseResource {
 
     private func map(from json: JSON) {
         name = json["name"].stringValue
-        imageUrl = json["headshot"].stringValue
+        imageUrl = json["headshot"].stringValue.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         twitter = json["twitter"].stringValue
     }
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleCell" rowHeight="164" id="kaa-IV-oYp" customClass="ArticleCell" customModule="Telegraph" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kaa-IV-oYp" id="zzt-bq-aeb">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="163.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-3a-2iH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="250" constant="200" id="Cti-Dn-jq5"/>
+                            <constraint firstAttribute="width" secondItem="8xD-3a-2iH" secondAttribute="height" multiplier="375:164" id="Fjf-Wb-7fF"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YM5-K2-Gzd" userLabel="bottomContainer">
+                        <rect key="frame" x="0.0" y="128" width="375" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meo-8H-qRt">
+                                <rect key="frame" x="0.0" y="3" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="DJN-rD-0a3"/>
+                                    <constraint firstAttribute="height" constant="30" id="gT2-2c-evT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="meo-8H-qRt" firstAttribute="leading" secondItem="YM5-K2-Gzd" secondAttribute="leading" id="OOR-VR-Avy"/>
+                            <constraint firstItem="meo-8H-qRt" firstAttribute="centerY" secondItem="YM5-K2-Gzd" secondAttribute="centerY" id="XI7-OK-RUZ"/>
+                            <constraint firstAttribute="height" constant="36" id="uYj-Iv-6yc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="8xD-3a-2iH" firstAttribute="width" secondItem="zzt-bq-aeb" secondAttribute="width" id="WVk-wu-1Gq"/>
+                    <constraint firstAttribute="bottom" secondItem="8xD-3a-2iH" secondAttribute="bottom" id="atF-NF-Grb"/>
+                    <constraint firstItem="8xD-3a-2iH" firstAttribute="centerX" secondItem="zzt-bq-aeb" secondAttribute="centerX" id="lEH-yL-fuM"/>
+                    <constraint firstItem="8xD-3a-2iH" firstAttribute="top" secondItem="zzt-bq-aeb" secondAttribute="top" id="mGd-27-5J6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YM5-K2-Gzd" secondAttribute="bottom" id="enU-jR-bRZ"/>
+                <constraint firstItem="YM5-K2-Gzd" firstAttribute="width" secondItem="kaa-IV-oYp" secondAttribute="width" id="ffa-bs-GRA"/>
+                <constraint firstItem="YM5-K2-Gzd" firstAttribute="centerX" secondItem="kaa-IV-oYp" secondAttribute="centerX" id="i7C-04-byL"/>
+                <constraint firstItem="YM5-K2-Gzd" firstAttribute="centerX" secondItem="kaa-IV-oYp" secondAttribute="centerX" id="xd9-hy-PPn"/>
+            </constraints>
+            <connections>
+                <outlet property="pictureImageView" destination="8xD-3a-2iH" id="8U3-MQ-Mik"/>
+                <outlet property="ratingLabel" destination="meo-8H-qRt" id="TgT-Yk-eqa"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="107"/>
+        </tableViewCell>
+    </objects>
+</document>

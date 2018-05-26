@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D8ED9B9E740DB737E8EAF53 /* Pods_TelegraphTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7093964465DCD37D65A5D3F2 /* Pods_TelegraphTests.framework */; };
 		B63BFE6220B736B4005AC633 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE6120B736B4005AC633 /* AppDelegate.swift */; };
-		B63BFE6420B736B4005AC633 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE6320B736B4005AC633 /* ViewController.swift */; };
-		B63BFE6720B736B4005AC633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6520B736B4005AC633 /* Main.storyboard */; };
 		B63BFE6920B736B5005AC633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6820B736B5005AC633 /* Assets.xcassets */; };
 		B63BFE6C20B736B6005AC633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BFE6A20B736B6005AC633 /* LaunchScreen.storyboard */; };
 		B63BFE8420B73B3E005AC633 /* TelegraphApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFE8320B73B3E005AC633 /* TelegraphApp.swift */; };
@@ -66,6 +64,10 @@
 		B63BFF0C20B77ACD005AC633 /* MockComponentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0720B77A15005AC633 /* MockComponentCreator.swift */; };
 		B63BFF0E20B77B26005AC633 /* ArticlesViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0D20B77B26005AC633 /* ArticlesViewModelSpec.swift */; };
 		B63BFF1020B77B7E005AC633 /* RxCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF0F20B77B7E005AC633 /* RxCollector.swift */; };
+		B63BFF1220B972FA005AC633 /* ArticlesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63BFF1120B972FA005AC633 /* ArticlesViewController.storyboard */; };
+		B63BFF1420B97D7E005AC633 /* ArticleCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF1320B97D7E005AC633 /* ArticleCellRepresentable.swift */; };
+		B63BFF1620B97E08005AC633 /* ArticleResource+CellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63BFF1520B97E08005AC633 /* ArticleResource+CellRepresentable.swift */; };
+		B63BFF1820B99801005AC633 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B63BFF1720B99801005AC633 /* ArticleCell.xib */; };
 		CF639828A7656464CA4CBC2B /* Pods_Telegraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DC0D7DA6CB356FACB7BA78 /* Pods_Telegraph.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,8 +90,6 @@
 		9522382A42F7C164BB93FD20 /* Pods-TelegraphTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelegraphTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelegraphTests/Pods-TelegraphTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B63BFE5E20B736B4005AC633 /* Telegraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telegraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63BFE6120B736B4005AC633 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B63BFE6320B736B4005AC633 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B63BFE6620B736B4005AC633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B63BFE6820B736B5005AC633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B63BFE6B20B736B6005AC633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B63BFE6D20B736B6005AC633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +148,10 @@
 		B63BFF0820B77A15005AC633 /* MockArticleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockArticleService.swift; sourceTree = "<group>"; };
 		B63BFF0D20B77B26005AC633 /* ArticlesViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewModelSpec.swift; sourceTree = "<group>"; };
 		B63BFF0F20B77B7E005AC633 /* RxCollector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCollector.swift; sourceTree = "<group>"; };
+		B63BFF1120B972FA005AC633 /* ArticlesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticlesViewController.storyboard; sourceTree = "<group>"; };
+		B63BFF1320B97D7E005AC633 /* ArticleCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCellRepresentable.swift; sourceTree = "<group>"; };
+		B63BFF1520B97E08005AC633 /* ArticleResource+CellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticleResource+CellRepresentable.swift"; sourceTree = "<group>"; };
+		B63BFF1720B99801005AC633 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,8 +201,6 @@
 			children = (
 				B63BFE8220B73B2E005AC633 /* App */,
 				B63BFEBF20B73CD9005AC633 /* Article */,
-				B63BFE6520B736B4005AC633 /* Main.storyboard */,
-				B63BFE6320B736B4005AC633 /* ViewController.swift */,
 			);
 			path = Telegraph;
 			sourceTree = "<group>";
@@ -321,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				B63BFECE20B73F27005AC633 /* ArticlesRoutable.swift */,
+				B63BFF1320B97D7E005AC633 /* ArticleCellRepresentable.swift */,
 			);
 			path = protocol;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				B63BFED520B7420A005AC633 /* ArticlesResource.swift */,
 				B63BFEF520B7585A005AC633 /* ArticleResource.swift */,
 				B63BFEF720B76141005AC633 /* AuthorResource.swift */,
+				B63BFF1520B97E08005AC633 /* ArticleResource+CellRepresentable.swift */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -355,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				B63BFEC820B73E59005AC633 /* ArticlesViewController.swift */,
+				B63BFF1120B972FA005AC633 /* ArticlesViewController.storyboard */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				B63BFF0420B777DB005AC633 /* ArticleCell.swift */,
+				B63BFF1720B99801005AC633 /* ArticleCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -586,9 +592,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63BFF1820B99801005AC633 /* ArticleCell.xib in Resources */,
 				B63BFE6C20B736B6005AC633 /* LaunchScreen.storyboard in Resources */,
 				B63BFE6920B736B5005AC633 /* Assets.xcassets in Resources */,
-				B63BFE6720B736B4005AC633 /* Main.storyboard in Resources */,
+				B63BFF1220B972FA005AC633 /* ArticlesViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,8 +732,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63BFEBB20B73CB7005AC633 /* StringUtil.swift in Sources */,
+				B63BFF1420B97D7E005AC633 /* ArticleCellRepresentable.swift in Sources */,
 				B63BFEBE20B73CB7005AC633 /* DateUtil.swift in Sources */,
 				B63BFE8720B73B9C005AC633 /* TelegraphAppRoutable.swift in Sources */,
+				B63BFF1620B97E08005AC633 /* ArticleResource+CellRepresentable.swift in Sources */,
 				B63BFECF20B73F27005AC633 /* ArticlesRoutable.swift in Sources */,
 				B63BFE9920B73C9A005AC633 /* ComponentCreatable.swift in Sources */,
 				B63BFECD20B73EF2005AC633 /* ArticleService.swift in Sources */,
@@ -742,7 +751,6 @@
 				B63BFEF620B7585A005AC633 /* ArticleResource.swift in Sources */,
 				B63BFE9D20B73C9A005AC633 /* ServiceCreatable.swift in Sources */,
 				B63BFEA020B73C9A005AC633 /* TableViewItem.swift in Sources */,
-				B63BFE6420B736B4005AC633 /* ViewController.swift in Sources */,
 				B63BFECB20B73ECD005AC633 /* ArticlesViewModel.swift in Sources */,
 				B63BFEA220B73C9A005AC633 /* BaseResource.swift in Sources */,
 				B63BFEB920B73CB7005AC633 /* ApiClient.swift in Sources */,
@@ -797,14 +805,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B63BFE6520B736B4005AC633 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B63BFE6620B736B4005AC633 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B63BFE6A20B736B6005AC633 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -867,7 +867,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -921,7 +921,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
