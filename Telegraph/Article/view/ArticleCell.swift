@@ -17,7 +17,7 @@ class ArticleCell: UITableViewCell, TableViewCell {
         setUp()
     }
 
-    func configureCell(with tableViewItem: TableViewItem, indexPath: IndexPath) {
+    func configureCell(with tableViewItem: TableViewItem) {
         resetContent()
         setContent(with: tableViewItem)
     }
@@ -34,6 +34,13 @@ class ArticleCell: UITableViewCell, TableViewCell {
         }
     }
 
+    private func resetContent() {
+        pictureImageView.image = nil
+        ratingLabel.text = nil
+        headlineLabel.text = nil
+        descriptionLabel.text = nil
+    }
+
     private func setUpRatingLabel() {
         let size: CGFloat = ratingLabel.frame.size.width
         ratingLabel.bounds = CGRect(x: 0, y: 0, width: size, height: size)
@@ -41,13 +48,6 @@ class ArticleCell: UITableViewCell, TableViewCell {
         ratingLabel.layer.borderWidth = 1.0
         ratingLabel.layer.backgroundColor = UIColor.clear.cgColor
         ratingLabel.layer.borderColor = UIColor.white.cgColor
-    }
-
-    private func resetContent() {
-        pictureImageView.image = nil
-        ratingLabel.text = nil
-        headlineLabel.text = nil
-        descriptionLabel.text = nil
     }
 
     private func setUp() {

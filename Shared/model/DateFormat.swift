@@ -4,4 +4,6 @@ enum DateFormat: String {
 
     case dayMonthYearHourMinute = "dd MMMM yyyy • h:mma"
 
+    case dayMonthYear = "dd MMM yyyy"
+
 }

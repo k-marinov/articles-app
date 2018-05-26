@@ -8,7 +8,7 @@ import SwiftyJSON
 class ArticleResourceSpec: QuickSpec {
 
     override func spec() {
-        describe("CourierNotificationsResource") {
+        describe("ArticleResource") {
             var resource: ArticleResource!
             let validJson: JSON = ArticleMother.createArticleJson()
             let releaseDate: Date = DateUtil.createDate(
@@ -39,7 +39,7 @@ class ArticleResourceSpec: QuickSpec {
                             expect(resource.articleBody).to(equal(""))
                             expect(resource.rating).to(equal(4))
                             expect(resource.pictureUrl).to(equal("http://www.telegraph.co.uk/content/"
-                                + "dam/film/the revenant/leo-xlarge.jpg"))
+                                + "dam/film/the%20revenant/leo-xlarge.jpg"))
 
                             expect(resource.videoUrl).to(equal(""))
                             expect(resource.actors.count).to(equal(4))

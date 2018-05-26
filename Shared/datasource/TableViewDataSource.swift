@@ -21,7 +21,7 @@ class TableViewDataSource<ITEM: TableViewItem, CELL: TableViewCell>: NSObject, U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CELL = tableView.dequeueReusableCell(withIdentifier: CELL.identifier, for: indexPath) as! CELL
         if indexPath.row < items.count {
-            cell.configureCell(with: items[indexPath.row], indexPath: indexPath)
+            cell.configureCell(with: items[indexPath.row])
         }
         return cell as! UITableViewCell
     }
