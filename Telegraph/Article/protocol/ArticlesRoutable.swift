@@ -1,21 +1,12 @@
 import UIKit
 
-protocol ArticlesRoutable: ViewControllerCreatable {
+protocol ArticlesRoutable: ViewControllerCreatable, Navigation {
 
     func setArticlesViewControllerAsRoot(to window: UIWindow, componentCreatable: ComponentCreatable) -> UIWindow
 
 }
 
 extension ArticlesRoutable {
-
-    func navigationController() -> UINavigationController? {
-        for window in UIApplication.shared.windows {
-            if let rootViewController: UINavigationController = window.rootViewController as? UINavigationController {
-                return rootViewController
-            }
-        }
-        return nil
-    }
 
     func setArticlesViewControllerAsRoot(to window: UIWindow, componentCreatable: ComponentCreatable) -> UIWindow {
         let viewController: UIViewController = createViewController(

@@ -41,7 +41,7 @@ class ArticlesViewModel: ViewModel, ArticleDetailRoutable {
     }
 
     private func detail(from indexPath: IndexPath) -> Observable<ArticleDetailRepresentable>  {
-        let detail: ArticleDetailRepresentable = self.dataSource.items[indexPath.row] as! ArticleDetailRepresentable
+        let detail: ArticleDetailRepresentable = dataSource.items[indexPath.row] as! ArticleDetailRepresentable
         return Observable<ArticleDetailRepresentable>.just(detail)
     }
 

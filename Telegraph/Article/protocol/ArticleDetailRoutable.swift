@@ -1,21 +1,12 @@
 import UIKit
 
-protocol ArticleDetailRoutable: ViewControllerCreatable {
+protocol ArticleDetailRoutable: ViewControllerCreatable, Navigation {
 
     func pushArticleDetailViewController(detail: ArticleDetailRepresentable)
 
 }
 
 extension ArticleDetailRoutable {
-
-    func navigationController() -> UINavigationController? {
-        for window in UIApplication.shared.windows {
-            if let rootViewController: UINavigationController = window.rootViewController as? UINavigationController {
-                return rootViewController
-            }
-        }
-        return nil
-    }
 
     func pushArticleDetailViewController(detail: ArticleDetailRepresentable) {
         let viewController: UIViewController = createViewController(

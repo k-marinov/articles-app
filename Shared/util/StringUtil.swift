@@ -9,12 +9,4 @@ class StringUtil {
         }
     }
 
-    class func concat(values: String...) -> String {
-        var newString: String = ""
-        for value in values {
-            newString.append(value)
-        }
-        return newString
-    }
-
 }

@@ -1,6 +1,5 @@
 import RxSwift
 import Nimble
-import Foundation
 
 class RxCollector<T> {
 

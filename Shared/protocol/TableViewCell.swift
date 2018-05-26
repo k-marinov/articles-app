@@ -1,5 +1,3 @@
-import UIKit
-
 protocol TableViewCell {
 
     static var identifier: String { get }

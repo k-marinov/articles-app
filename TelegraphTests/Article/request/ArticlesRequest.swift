@@ -34,7 +34,7 @@ class ArticlesRequestSpec: QuickSpec {
                 }
             }
 
-            describe("createApiResponse") {
+            describe("response") {
                 var apiResponse: ApiResponse!
 
                 context("when status code is 200") {

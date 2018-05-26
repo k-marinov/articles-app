@@ -7,7 +7,7 @@ import SwiftyJSON
 class ArticlesResourceSpec: QuickSpec {
 
     override func spec() {
-        describe("CourierNotificationsResource") {
+        describe("ArticlesResource") {
             var resource: ArticlesResource!
             let validJsonData: Data = ArticleMother.createArticlesJsonData()
 
@@ -28,7 +28,7 @@ class ArticlesResourceSpec: QuickSpec {
                             resource = ArticlesResource(data: Data())
                         }
 
-                        it("returns empty notifications array") {
+                        it("returns empty array") {
                             expect(resource.articles).to(beEmpty())
                         }
                     }

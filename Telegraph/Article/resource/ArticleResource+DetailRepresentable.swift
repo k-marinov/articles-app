@@ -11,9 +11,9 @@ extension ArticleResource {
     }
 
     func information() -> String {
-
         var information: String = ""
-        information.append(genres.map { $0 + "\n" }.reduce("Genre: ",+))
+        information.append(genres.map { $0 + " " }.reduce("Genre: ",+))
+        information.append("\n")
         information.append("Duration: " + duration)
         information.append("\n")
         information.append(releaseDateFormatted())
@@ -25,7 +25,6 @@ extension ArticleResource {
         information.append("\n")
         information.append(publishedDateFormatted())
         return information
-
     }
 
     private func releaseDateFormatted() -> String {
@@ -47,36 +46,3 @@ extension ArticleResource {
     }
 
 }
-
-
-//{
-//    "id": 3,
-//    "website-url": "http://www.telegraph.co.uk/film/room/",
-//    "headline": "Room",
-//    "description": "Brie Larson is impeccable",
-//    "article-body": "",
-//    "ratings": 3,
-//    "picture-url": "http://www.telegraph.co.uk/content/dam/film/Room/room1-xlarge.jpg",
-//    "video-url": "",
-//    "actors": [
-//    "Brie Larson",
-//    "Jacob Tremblay",
-//    "Joan Allen",
-//    "Sean Bridgers",
-//    "Tom McCamus",
-//    "William H. Macy"
-//    ],
-//    "director": "Lenny Abrahamson",
-//    "genre": [
-//    "Drama"
-//    ],
-//    "synopsis": "A mother forced to raise her child in a single room in an adaptation of the best-selling novel by Emma Donoghue",
-//    "release-date": "29-01-2015",
-//    "duration": "118 mins",
-//    "published-date": "14 January 2016 • 5:15pm",
-//    "author": {
-//        "name": "Tim Robey",
-//        "headshot": "http://www.telegraph.co.uk/content/dam/film/team/tim-robey-small.jpg",
-//        "twitter": "@trim_obey"
-//    }
-//},

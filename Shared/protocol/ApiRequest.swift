@@ -51,7 +51,6 @@ extension ApiRequest {
     private func createUrl() throws -> URL {
         let url: URL? = URL(string: httpRequestUrl())
         if url == nil {
-            Logger.log.debug("cannot create url with httpRequestUrl=\(httpRequestUrl())")
             throw ClassError.invalidArgument
         }
         return url!
