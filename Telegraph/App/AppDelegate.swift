@@ -9,8 +9,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+
         if isProductionEnabled() {
-            telegraphApp.application(application, didFinishLaunchingWithOptions: launchOptions, window: window!)
+            telegraphApp.setUp(with: window!)
         }
         return true
     }

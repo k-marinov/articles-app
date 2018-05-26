@@ -8,11 +8,7 @@ class TelegraphApp: TelegraphAppRoutable {
         self.componentCreatable = componentCreatable
     }
 
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?,
-        window: UIWindow) {
-
+    func setUp(with window: UIWindow) {
         _ = setRootViewController(to: window, componentCreatable: componentCreatable)
     }
 

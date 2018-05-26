@@ -1,4 +1,5 @@
 import Foundation
+import RxSwift
 
 protocol ApiRequest {
 
@@ -18,7 +19,9 @@ protocol ApiRequest {
 
     func asURLRequest() throws -> URLRequest
 
-    func createApiResponse(httpResponse: HttpResponse) -> ApiResponse
+    func response(from newResponse: HttpResponse) -> ApiResponse
+
+    func response(from newResponse: HttpResponse) -> Observable<ApiResponse>
 
 }
 
@@ -26,6 +29,23 @@ extension ApiRequest {
 
     func asURLRequest() throws -> URLRequest {
         return createUrlRequest(withUrl: try createUrl())
+    }
+
+    func response(from newResponse: HttpResponse) -> Observable<ApiResponse> {
+        return Observable<ApiResponse>.create { observer  in
+            if newResponse.error == nil {
+                let apiResponse: ApiResponse = self.response(from: newResponse)
+                if apiResponse.isSuccess() {
+                    observer.onNext(apiResponse)
+                    observer.onCompleted()
+                } else {
+                    observer.onError(apiResponse.apiFailError())
+                }
+            } else {
+                observer.onError(ApiError.network)
+            }
+            return Disposables.create()
+        }
     }
 
     private func createUrl() throws -> URL {

@@ -22,7 +22,7 @@ class ArticlesRequest: ApiRequest {
         return nil
     }
 
-    func createApiResponse(httpResponse: HttpResponse) -> ApiResponse {
+    func response(from httpResponse: HttpResponse) -> ApiResponse {
         return ApiResponse(
             resourceType: ArticlesResource.self,
             httpResponse: httpResponse,

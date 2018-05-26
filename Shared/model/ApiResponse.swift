@@ -16,7 +16,7 @@ class ApiResponse {
 
     }
 
-    func createApiErrorOnFail(with apiRequest: ApiRequest) -> ApiError {
+    func apiFailError() -> ApiError {
         if hasClientError() {
             return ApiError.client
         } else if hasServerError() {

@@ -40,7 +40,7 @@ class ArticlesRequestSpec: QuickSpec {
                 context("when status code is 200") {
                     beforeEach {
                         let httpResponse = HttpResponseMother.createHttpResponse(withStatusCode: 200)
-                        apiResponse = request.createApiResponse(httpResponse: httpResponse)
+                        apiResponse = request.response(from: httpResponse)
                     }
 
                     it("returns success") {
@@ -59,7 +59,7 @@ class ArticlesRequestSpec: QuickSpec {
                 context("when status code is 404") {
                     beforeEach {
                         let httpResponse = HttpResponseMother.createEmptyHttpResponse(withStatusCode: 404)
-                        apiResponse = request.createApiResponse(httpResponse: httpResponse)
+                        apiResponse = request.response(from: httpResponse)
                     }
 
                     it("returns success") {
