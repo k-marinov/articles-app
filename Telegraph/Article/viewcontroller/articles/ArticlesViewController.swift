@@ -15,6 +15,7 @@ class ArticlesViewController: UIViewController, ModelableViewController {
         return refreshControl
     }()
     @IBOutlet weak var tableView: UITableView!
+
     private lazy var articlesViewModel: ArticlesViewModel = {
         return self.viewModel as! ArticlesViewModel
     }()
@@ -30,24 +31,21 @@ class ArticlesViewController: UIViewController, ModelableViewController {
     }
 
     private func setUp() {
-        setUpNavigationBarStyle()
+        setUpNavigationBarTitle()
         setUpTableView()
     }
 
-    private func setUpNavigationBarStyle() {
-        self.navigationController?.navigationBar.barTintColor = UIColor.black
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
-        self.navigationController?.navigationBar.topItem?.title = "Articles"
+    private func setUpNavigationBarTitle() {
+        navigationItem.title = "Articles"
     }
 
     private func setUpTableView() {
         tableView.dataSource = articlesViewModel.dataSource
+        tableView.delegate = articlesViewModel.dataSource
         tableView.backgroundView = refreshControl
-        self.tableView.separatorStyle = .none
         tableView.register(
             UINib(nibName: ArticleCell.identifier, bundle: nil),
             forCellReuseIdentifier: ArticleCell.identifier)
-        //tableView.reloadData()
     }
 
     private func subscribe() {

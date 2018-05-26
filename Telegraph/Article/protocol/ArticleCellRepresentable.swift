@@ -4,6 +4,10 @@ protocol ArticleCellRepresentable: TableViewItem {
 
     var rating: Int! { get }
 
+    var headline: String! { get }
+
+    var description: String! { get }
+
 }
 
 

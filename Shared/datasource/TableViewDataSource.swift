@@ -4,6 +4,7 @@ import RxSwift
 class TableViewDataSource<ITEM: TableViewItem, CELL: TableViewCell>: NSObject, UITableViewDataSource, UITableViewDelegate {
 
     private(set) var items: [TableViewItem] = [TableViewItem]()
+    private(set) var didSelectRowAtIndexPath: PublishSubject<IndexPath> = PublishSubject<IndexPath>()
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -23,6 +24,10 @@ class TableViewDataSource<ITEM: TableViewItem, CELL: TableViewCell>: NSObject, U
             cell.configureCell(with: items[indexPath.row], indexPath: indexPath)
         }
         return cell as! UITableViewCell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didSelectRowAtIndexPath.onNext(indexPath)
     }
 
     func appendOnce(contentsOf newItems: [TableViewItem]) {

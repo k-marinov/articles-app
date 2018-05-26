@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Article Detail View Controller-->
+        <scene sceneID="xVS-wa-a7y">
+            <objects>
+                <viewController storyboardIdentifier="ArticleDetailViewController" id="HHd-au-i47" customClass="ArticleDetailViewController" customModule="Telegraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e3w-sY-T6c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIx-ZU-ApA">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="beX-0i-pDC">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="164"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="beX-0i-pDC" secondAttribute="height" multiplier="375:164" id="NdK-Xi-Uac"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="beX-0i-pDC" firstAttribute="leading" secondItem="LIx-ZU-ApA" secondAttribute="leading" id="5f5-gg-JlB"/>
+                                    <constraint firstAttribute="bottom" secondItem="beX-0i-pDC" secondAttribute="bottom" priority="750" constant="503" id="Wsb-iL-nc3"/>
+                                    <constraint firstAttribute="trailing" secondItem="beX-0i-pDC" secondAttribute="trailing" id="fhR-gO-qoF"/>
+                                    <constraint firstItem="beX-0i-pDC" firstAttribute="centerX" secondItem="LIx-ZU-ApA" secondAttribute="centerX" id="je0-tK-kBz"/>
+                                    <constraint firstItem="beX-0i-pDC" firstAttribute="top" secondItem="LIx-ZU-ApA" secondAttribute="top" id="zU4-gJ-jxa"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LIx-ZU-ApA" firstAttribute="width" secondItem="e3w-sY-T6c" secondAttribute="width" id="4OA-K1-1qi"/>
+                            <constraint firstItem="LIx-ZU-ApA" firstAttribute="centerX" secondItem="TwR-AK-dr9" secondAttribute="centerX" id="8Sf-ac-ezg"/>
+                            <constraint firstItem="LIx-ZU-ApA" firstAttribute="height" secondItem="e3w-sY-T6c" secondAttribute="height" priority="750" id="CWS-wQ-674"/>
+                            <constraint firstItem="LIx-ZU-ApA" firstAttribute="centerY" secondItem="TwR-AK-dr9" secondAttribute="centerY" id="lt0-d5-4rS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TwR-AK-dr9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jgs-DS-CcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.40000000000001" y="-90.404797601199405"/>
+        </scene>
+    </scenes>
+</document>

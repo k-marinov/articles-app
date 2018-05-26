@@ -1,7 +1,7 @@
 import Foundation
 import SwiftyJSON
 
-class ArticleResource: BaseResource, ArticleCellRepresentable {
+class ArticleResource: BaseResource, ArticleCellRepresentable, ArticleDetailRepresentable {
 
     private(set) var id: Int!
     private(set) var websiteUrl: String!

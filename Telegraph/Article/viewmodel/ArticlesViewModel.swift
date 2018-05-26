@@ -1,6 +1,6 @@
 import RxSwift
 
-class ArticlesViewModel: ViewModel, ArticlesRoutable {
+class ArticlesViewModel: ViewModel, ArticleDetailRoutable {
 
     private let disposeBag: DisposeBag = DisposeBag()
 
@@ -12,6 +12,18 @@ class ArticlesViewModel: ViewModel, ArticlesRoutable {
 
     required init(componentCreatable: ComponentCreatable) {
         articlesService = componentCreatable.create(with: componentCreatable)
+        subscribe()
+    }
+
+    func subscribe() {
+        dataSource.didSelectRowAtIndexPath
+            .flatMap { [weak self] indexPath -> Observable<ArticleDetailRepresentable>  in
+                guard let `self` = self else { return Observable.empty() }
+                return self.detail(from: indexPath)
+            }.subscribe(onNext: { [weak self] detail in
+                guard let `self` = self else { return }
+                self.pushArticleDetailViewController(detail: detail)
+            }).disposed(by: disposeBag)
     }
 
     func loadArticles() -> Observable<Void> {
@@ -26,6 +38,11 @@ class ArticlesViewModel: ViewModel, ArticlesRoutable {
             }, onSubscribe: { [weak self] in
                 self?.onLoadArticlesStarted()
             }).map { _ in return () }
+    }
+
+    private func detail(from indexPath: IndexPath) -> Observable<ArticleDetailRepresentable>  {
+        let detail: ArticleDetailRepresentable = self.dataSource.items[indexPath.row] as! ArticleDetailRepresentable
+        return Observable<ArticleDetailRepresentable>.just(detail)
     }
 
     private func onLoadArticlesStarted() {
